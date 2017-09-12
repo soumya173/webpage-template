@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+		
+	<link rel="stylesheet" href="css\style.css">
+	<link rel="stylesheet" href="css\bootstrap.min.css">
+	<link rel="stylesheet" href="css\bootstrap-theme.min.css">
+		
+	<script src="js\jquery.js"></script>	
+	<script src="js\bootstrap.min.js"></script>
+	<script src="js\script.js"></script>
+	
+</head>
+<body>
+
+	<div class="container" id="main">
+		<nav class="navbar navbar-fixed-top navbar-inverse">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-target="#MyNavbar" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="#">LOGO goes here</a>
+			</div>
+			
+			<div class="navbar-collapse collapse" id="MyNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">Home</a>					
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>						
+						<ul class="dropdown-menu">
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">SEO</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">More Services</li>
+							<li><a href="#">Content Creating</a></li>
+							<li><a href="#">Social Media Marketing</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form pull-left">
+					<input type="text" class="form-control" placeholder="Search the site...">
+					<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+				<ul class="nav navbar-nav pull-right">					
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> Update profile</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a></li>
+							<li class="divider"></li>
+							<li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+						</ul>
+					</li>					
+				</ul>
+			</div>
+		</nav>
+		<div class="carousel slide" id="myCarousel">
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>Bootstrap 3</h4>
+						<p>This is Bootstrap 3, designed by Twitter.</p>
+					</div>
+				</div>
+				
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>Faster design technique</h4>
+						<p>By using Bootstrap 3 we can design a website within 4 hours.</p>
+					</div>
+				</div>
+				
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>CSS classes</h4>
+						<p>Bootstrap is developed using CSS classes and by adding the already created classes we can design websites.</p>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="icon-next"></span></a>
+		</div>
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<h4>Success!</h4>
+					<p>You just made this display using jQuery.</p>
+				</div>				
+				<div class="well wel-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span>Call Me</a>
+				</div>
+				<div class="well">
+					<div class="page-header">
+						<h1>This is a heading <small>and this is a sub-header</small></h1>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+					<a href="" class="btn btn-large btn-primary" id="alertMe">Click me</a>
+					<a href="" class="btn btn-large btn-link">I'm a link</a>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="featuresHeading">
+			<div class="col-12">
+				<h4>More Features</h4>
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor dui at consectetur imperdiet. Proin erat lectus, vehicula non diam nec, tempus porta sem.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel feature">
+					<div class="panel-heading">Markup with HTML5</div>
+					<img src="photos/html.jpg" class="img-circle">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor dui at consectetur imperdiet. Proin erat lectus, vehicula non diam nec, tempus porta sem.</p>
+					<a href="" class="btn btn-warning btn-block">Learn to code</a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel feature">
+					<div class="panel-heading">This is CSS</div>
+					<img src="photos/css.png" class="img-circle">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor dui at consectetur imperdiet. Proin erat lectus, vehicula non diam nec, tempus porta sem.</p>
+					<a href="" class="btn btn-warning btn-block">Learn to code</a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel feature">
+					<div class="panel-heading">Script with JS</div>
+					<img src="photos/js.png" class="img-circle">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor dui at consectetur imperdiet. Proin erat lectus, vehicula non diam nec, tempus porta sem.</p>
+					<a href="" class="btn btn-warning btn-block">Learn to code</a>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="moreInfo">
+			<div class="col-sm-6">
+				<h3>Tabbable contents</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+						<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<h4><span class="glyphicon glyphicon-map-marker">Our Location <small>More like our favorite spot</small></h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29584.398165315684!2d88.0614535!3d22.04769155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1459577489929" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor dui at consectetur imperdiet. Proin erat lectus, vehicula non diam nec, tempus porta sem. Ut porta tortor suscipit nibh commodo pulvinar. Ut dictum risus sit amet lorem consectetur convallis luctus id ligula</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor dui at consectetur imperdiet. Proin erat lectus, vehicula non diam nec, tempus porta sem. Ut porta tortor suscipit nibh commodo pulvinar. Ut dictum risus sit amet lorem consectetur convallis luctus id ligula</p>
+						</div>
+						<div class="tab-pane" id="tab2">
+							<h4>A left flotted picture <small>Using placehold it</small></h4>
+							<img src="http://placehold.it/140" class="thumbnail pull-left">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor dui at consectetur imperdiet. Proin erat lectus, vehicula non diam nec, tempus porta sem. Ut porta tortor suscipit nibh commodo pulvinar. Ut dictum risus sit amet lorem consectetur convallis luctus id ligula</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor dui at consectetur imperdiet. Proin erat lectus, vehicula non diam nec, tempus porta sem. Ut porta tortor suscipit nibh commodo pulvinar. Ut dictum risus sit amet lorem consectetur convallis luctus id ligula</p>
+							<hr>
+							<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click to view a modal window</a>
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">A modal window</h4>
+										</div>
+										<div class="modal-body">
+											<h4>Text in the modal</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor dui at consectetur imperdiet. Proin erat lectus, vehicula non diam nec, tempus porta sem. Ut porta tortor suscipit nibh commodo pulvinar.</p>
+											
+											<h4>Pop over in the modal</h4>
+											<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I know you would">Don't click this button</a>
+											
+											<h4>Tooltips in the modal</h4>
+											<a href="#" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip and it already got that. <a href="#" data-original-title="Another tooltip" rel="tooltip">This one</a>
+											
+											<hr>
+											
+											<p><small class="text-muted">PS. This form doesn't do anything.</small></p>
+											
+											<form class="form-horizontal">											
+												<div class="form-group">
+													<label class="col-lg-2 label-control" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input type="text" class="form-control" id="inputName" placeholder="Enter name"></input>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 label-control" for="inputEmail">Email</label>
+													<div class="col-lg-10">
+														<input type="email" class="form-control" id="inputEmail" placeholder="Enter email"></input>
+													</div>													
+												</div>
+												<div class="form-group">
+													<label class="col-lg-2 label-control" for="inputMsg">Messege</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" id="inputMsg" placeholder="Enter Messege" rows="3"></textarea>
+														<button type="submit" class="btn btn-success pull-right">Send</button>
+													</div>
+												</div>
+											</form>											
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Submit</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h3>A Simple Text</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis commodo viverra. Sed elementum felis ut sem pulvinar molestie. Praesent quis diam fringilla, fermentum arcu quis, rutrum mauris. Maecenas eu ante vitae arcu tristique mattis. Aenean vehicula gravida enim, nec tincidunt lectus posuere at.</p>
+				<h4>A List Group</h4>
+				<div class="list-group">
+					<a href="" class="list-group-item">
+						<h4 class="list-group-item-heading">Lorem ipsum</h4>
+						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis commodo viverra. Sed elementum felis ut sem pulvinar molestie.</p>
+					</a>
+					<a href="" class="list-group-item">
+						<h4 class="list-group-item-heading">Lorem ipsum</h4>
+						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis commodo viverra. Sed elementum felis ut sem pulvinar molestie.</p>
+					</a>
+					<a href="" class="list-group-item">
+						<h4 class="list-group-item-heading">Lorem ipsum</h4>
+						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis commodo viverra. Sed elementum felis ut sem pulvinar molestie.</p>
+					</a>
+				</div>
+				<h4>A Small heading</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis commodo viverra. Sed elementum felis ut sem pulvinar molestie. Praesent quis diam fringilla, fermentum arcu quis, rutrum mauris. Maecenas eu ante vitae arcu tristique mattis. Aenean vehicula gravida enim, nec tincidunt lectus posuere at.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row" id="moreCourses">
+			<div class="col-12">
+				<h3>Learn more about Web design</h3>
+				<div class="thumbnails row">
+					<div class="col-sm-6">
+						<div class="thumbnail">
+							<img src="photos/html.jpg" height="70%" width="70%">
+							<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>99</div>
+							<div class="caption">
+								<h3>HTML5</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis commodo viverra. Sed elementum felis ut sem pulvinar molestie. Praesent quis diam fringilla,</p>
+								
+								<p><a href="" class="btn btn-primary btn-small">Take course</a> <a href="" class="btn btn-link btn-small">Learn more</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="thumbnail">
+							<img src="photos/css.png" height="70%" width="70%">
+							<div class="label label-info price"><span class="glyphicon glyphicon-tag"></span> Free</div>
+							<div class="caption">
+								<h3>CSS3</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis commodo viverra. Sed elementum felis ut sem pulvinar molestie. Praesent quis diam fringilla,</p>
+								<p><a href="" class="btn btn-primary btn-small">Take course</a> <a href="" class="btn btn-link btn-small">Learn more</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>copyright &copy; 2016 Soumyajit Gorai</h6>
+				</div>
+				<div class="col-sm-4">
+					<h6>About us</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis commodo viverra. Sed elementum felis ut sem pulvinar molestie. Praesent quis diam fringilla, fermentum arcu quis, rutrum mauris. Maecenas eu ante vitae arcu tristique mattis. Aenean vehicula gravida enim, nec tincidunt lectus posuere at. Donec hendrerit feugiat metus at dictum. Pellentesque sit amet tortor in nisi varius ullamcorper nec eget justo. Nulla lobortis, nulla ac feugiat faucibus, est massa eleifend neque, a sodales ante ante at quam.</p>
+					
+				</div>
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="">Home</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Links</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<h6>Follow us</h6>
+					<ul class="unstyled">
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Twitter</a></li>
+						<li><a href="">Google Plus</a></li>					
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<h6>Coded by <span class="glyphicon glyphicon-heart"></span> by Soumyajit</h6>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
